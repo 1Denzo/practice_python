@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Список машин</title>
+    <style>
+        /* Стили для списка */
+        ul {
+            list-style-type: disc; /* Используем точки */
+            padding-left: 20px; /* Отступ слева */
+        }
+    </style>
+</head>
+<body>
+    <h1>Список машин</h1>
+    <ul>
+        {% for car in cars %}
+        <li>{{ car }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
